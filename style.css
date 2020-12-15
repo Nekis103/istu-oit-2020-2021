@@ -1,0 +1,79 @@
+body{
+  background-color: lightgray;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 4fr 1fr 2fr;
+  grid-auto-rows: 100%;
+  padding: 20px;
+}
+
+.tile{
+  background-color: white;
+  width: calculate(100%-10px);
+  height: minmax(800px, auto);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+button{
+  width: 20%;
+  margin: auto;
+}
+
+
+
+#source{
+  border: none;
+  width: 90%;
+  height: 600px;
+  vertical-align: top;
+  resize: vertical;
+}
+
+#form{
+  display: block;
+  max-width: 100%;  
+  background-color: gray;
+  padding: 10px;
+}
+
+input{
+  display: block;
+  width: calc(100% - 9px);
+  height: 15px;
+  font: verdana;
+}
+
+label{
+  display: block;
+  font: verdana 15pt;
+  color: white;
+}
+
+textarea{
+  display: block;
+  width: calc(100% - 9px);
+  height: 60px;
+  font: verdana;
+  resize: vertical;
+  
+}
+
+.info{
+  font-size: 17pt;
+  display: block;
+  width: 100%;  
+}
+
+.submit{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.radio{
+  width: auto;
+}
