@@ -1,0 +1,152 @@
+body
+{
+    margin: 0px;
+    background: url("background.jpg") repeat-x;
+}
+
+.site-wrapper
+{
+    background:#FFF;
+    margin: 0px auto;
+}
+
+.logo-name
+{
+    flex:1;
+    padding-left: 10px;
+}
+
+.logo-site
+{
+    display: flex;
+    background: #dddddd;
+    padding-top:10px;
+}
+
+.logo-img
+{
+    height:150px;
+}
+
+.site-menu-item
+{
+    background: #FFF;
+}
+
+.site-menu a:hover
+{
+    background-color: #dddddd; /* Цвет активных ссылок */
+}
+
+.site-content
+{
+    padding:20px;
+    background: #dddddd;
+}
+
+.heading
+{
+    text-align:center;
+}
+
+.site-text
+{
+    text-align:justify;
+}
+
+.site-text a:hover
+{
+    color: #000000; /* Цвет активных ссылок */
+}
+
+.footer
+{
+    text-align:center;
+}
+
+.scrollup
+{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    left:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+}
+
+/* PC */
+@media (min-width:1024px)
+{
+    .site-header
+    {
+        height:200px;
+    }
+
+    .logo
+    {
+        padding-right: 10px;
+    }
+
+    .site-wrapper
+    {
+        width:1024px;
+    }
+
+    #leftlion
+    {
+        float:left;
+        height:250px;
+        margin-right:20px;
+    }
+
+    .site-menu
+    {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .site-menu-item
+    {
+        flex: 1;
+        display:block;
+        padding:10px;
+    }
+
+}
+
+/* MB */
+@media (max-width: 1023px)
+{
+    .site-menu-item
+    {
+        display:block;
+        text-align:center;
+    }
+
+    .site-wrapper
+    {
+        width:100%;
+    }
+
+    .logo
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #leftlion
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .logo-name
+    {
+        display:none;
+    }
+}
